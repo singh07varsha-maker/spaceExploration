@@ -1,0 +1,85 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(4,minmax(300px ,1fr));
+    grid-template-rows: auto auto auto auto;
+    gap:2em;
+    grid-template-areas: 
+    "box1 box1 box1 box1"
+    "box2 box2 box2 box2"
+    "box3 box3 box4 box5"
+    "box6 box7 box7 box5";
+    background: url(backgroundblack2.jpeg);
+    padding: 20px;
+    font-size: 16;
+}
+.cards{
+    cursor: pointer;
+    position:relative;
+    background: #212121;
+    gap:2em;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 128, 120, 0.908);
+    border-radius: 12px;
+    transition: 0.4s ease;
+    box-shadow: 0 0 20px , rgba(48 , 28 , 117 , 0.5);
+    color: #d4d3d3;
+}
+.cards:hover{
+    transform: translateY(-10px);
+    animation: Glow 0.9s infinite alternate;
+}
+    @keyframes Glow  {
+        0%{
+            box-shadow: 0 0 25px
+            rgba(0, 179, 255, 0.7);
+        }
+        50%{
+            box-shadow: 0 0 25px
+            rgba(56, 189, 248, 0.7);
+        }
+        100%{
+            box-shadow :0 0 25px
+            rgba(0, 179, 255, 0.7);
+        }
+    }
+.navlist{
+    text-align:center;
+    font-size: 16px;
+    margin: 0 15px;
+}
+.navlist li{
+    display:inline-block;
+    margin: 0 15px;
+}
+.navlist a{
+    color:#f0f0f0;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navlist a:hover{
+    transform: translateY(-4px);
+    color:#006eff;
+}
+h1{
+    font-size: 34px;
+    color:#edecec;
+    text-decoration: underline;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    color:#d5d5d5;
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    text-decoration: none;
+    color:#d5d5d5;
+}
+li{
+    list-style-type: disc;
+}

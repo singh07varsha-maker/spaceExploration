@@ -1,0 +1,122 @@
+.Cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px  1fr));
+    grid-template-rows: repeat(6 , auto);
+    gap:2em;
+    padding: 40px;
+    grid-template-areas: 
+    "box1 box1 box1 box1"
+    "box2 box2 box2 box2"
+    "box3 box3 box3 box3"
+    "box4 box5 box6 box7"
+    "box4 box5 box6 box7"
+    "box8 box8 box8 box8";
+    background: url(Homepage.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cards{
+    background: #232323;
+    position: relative;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(82, 0, 136, 0.908);
+    color:#eeeeee;  
+    cursor: pointer;
+    transition: 0.4s ease;
+    text-align: center;
+}
+.cards:hover{
+    transform: translateY(-10px);
+    animation: Glow 0.99s infinite alternate;
+}
+@keyframes Glow{
+    0%{
+        box-shadow:0 0 20px rgb(255, 119, 0);
+    }
+    50%{
+        box-shadow: 0 0 20px rgb(0, 4, 255);
+    }
+    100%{
+        box-shadow: 0 0 20px rgb(0, 208, 255);
+    }
+}
+.navlist{
+    text-align:center;
+    font-size: 16px;
+    margin: 0 15px;
+}
+.navlist li{
+    display:inline-block;
+    margin: 0 15px;
+}
+.navlist a{
+    color:#f0f0f0;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navlist a:hover{
+    transform: translateY(-6px);
+    color:#006eff;
+}
+h1{
+    font-size: 36px;
+    color:#edecec;
+    text-decoration: underline;
+    text-align: center;
+}
+h1:hover{
+    text-decoration-color: #eeeeee;
+    animation: colour 0.10s ease;
+}
+@keyframes colour{
+    0%{
+        text-decoration-color:0 0 20px rgb(255, 119, 0);
+    }
+    50%{
+        text-decoration-color: 0 0 20px rgb(0, 4, 255);
+    }
+    100%{
+        text-decoration-color: 0 0 20px rgb(0, 208, 255);
+    }
+}
+    
+
+h2{
+    font-size: 24px;
+    color:#d5d5d5;
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    text-align: center;
+    text-decoration: none;
+    color:#d5d5d5;
+}
+li{
+    list-style-type: disc;
+}
+p{
+    padding:50px;
+    text-align: center;
+    color:azure;
+    font-size: 20;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom: 2px;
+    padding-top:2px ;
+}
+li{
+    text-align: center;
+    color:azure;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom: 5px;
+    padding-top:5px ;
+    font-size: 20;
+}
+
+            
